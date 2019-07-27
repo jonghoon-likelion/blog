@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<br>
+
+<div class="d-flex justify-content-center mt-5">
+    <div class="d-flex justify-content-center mt-5">
+        <div>
+            <form method='POST'>
+                {% csrf_token %}
+                <table>
+                    {{form.as_table}}
+                </table>
+                <br>
+                <input class="btn btn-dark" type="submit" value="submit">
+        </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
